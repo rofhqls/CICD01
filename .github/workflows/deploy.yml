@@ -26,4 +26,4 @@ jobs:
             ./gradlew clean build
             sudo fuser -k -n tcp 8070 || true   # 기존 실행된 서버 종료
             # || true : 8070에 종료시킬 프로세스가 없더라도 에러없이 정상 실행
-            nohup java -jar build/libs/*SNAPSHOT.jar > ./output.log 2>&1 &
+            java -jar build/libs/*SNAPSHOT.jar
