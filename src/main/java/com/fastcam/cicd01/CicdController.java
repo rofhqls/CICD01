@@ -8,6 +8,6 @@ public class CicdController {
 
     @GetMapping("/")
     public String index(){
-        return "<h1>Welcome CICD World</h1>";
+        return "<h1>수정이 됐을까 안됐을까~</h1>";
     }
 }
