@@ -23,6 +23,7 @@ jobs:
             rm -rf src/main/resources/application.yaml
             git reset --hard HEAD   # 서버의 로컬 변경사항 초기화
             git pull origin main
+            chmod +x gradlew        # 실행 권한 부여
             echo "$APPLICATION_PROPERTIES" > src/main/resources/application.yaml
             
             ./gradlew clean build
